@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+.lines__container {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.lines__container h1 {
+    position: relative;
+    font-variant: small-caps;
+    font-weight: lighter;
+    font-size: 2.5em;
+}
+
+.lines__container h1::before {
+    content: "";
+    position: absolute;
+    height: 0.2rem;
+    width: 15rem;
+    background-color: #000;
+    top: 50%;
+    right: 110%;
+}
+
+.lines__container h1::after {
+    content: "";
+    position: absolute;
+    height: 0.2rem;
+    width: 15rem;
+    background-color: #000;
+    top: 50%;
+    left: 110%;
+}
